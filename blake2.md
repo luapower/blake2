@@ -4,9 +4,7 @@ tagline: BLAKE2 hashing
 
 ## `local blake2 = require'blake2'`
 
-A ffi binding of the [BLAKE2] fast cryptographic hash.
-
-[BLAKE2]: https://blake2.net/
+A ffi binding of the [BLAKE2](https://blake2.net/) fast cryptographic hash.
 
 ## API
 
