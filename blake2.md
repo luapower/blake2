@@ -13,16 +13,16 @@ A ffi binding of the [BLAKE2] fast cryptographic hash.
 In the table below, `?` is either `s`, `b`, `sp` or `bp` for each variant
 of the BLAKE2 algorithm.
 
--------------------------------------------------------- --------------------------------------------------------
-`blake2.blake2?(s, [size], [key], [#out]) -> s` \        Compute the hash of a string or a cdata buffer.
+---------------------------------------------------------- ----------------------------------------------------------
+`blake2.blake2?(s, [size], [key], [#out]) -> s` \          Compute the hash of a string or a cdata buffer.
 `blake2.blake2?(cdata, size, [key], [#out]) -> s`
 
-`blake2.blake2?_digest([key | opt_t], [#out]) -> digest` Get a function that can consume multiple
-                                                         data chunks until called with no arguments to
-`digest(s, [size])` \                                    return the final hash.
+`blake2.blake2?_digest([key | opt_t], [#out]) -> digest` \ Get a function that can consume multiple
+                                                           data chunks until called with no arguments to
+`digest(s, [size])` \                                      return the final hash.
 `digest(cdata, size)` \
 `digest() -> hash`
--------------------------------------------------------- --------------------------------------------------------
+---------------------------------------------------------- ----------------------------------------------------------
 
 The hash is returned raw in a Lua string. To get it as hex use [glue].tohex().
 
