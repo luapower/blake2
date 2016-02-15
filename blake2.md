@@ -45,7 +45,5 @@ in place of the `key` arg in which more options can be specified:
 * `key`: key string for keyed hashing (up to 64 bytes for BLAKE2b, up to 32 bytes for BLAKE2s).
 * `hash_length`: optional, for reducing the length of the output hash.
 
-![hash tree](http://pythonhosted.org/pyblake2/_images/tree.png)
-
 See section 2.10 in [BLAKE2 specification](https://blake2.net/blake2_20130129.pdf)
 for comprehensive review of tree hashing.
